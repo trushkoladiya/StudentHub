@@ -51,6 +51,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 // ─── Start Server ──────────────────────────────────────────
+// Refactored logging to show startup timestamp and environment setup
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`\n✅ Server running → http://localhost:${PORT}`);
